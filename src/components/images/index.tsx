@@ -8,8 +8,9 @@ import logoJpg from '..//images/logo.jpg';
 import logoPng from '..//images/logo.png'; 
 
 
-export default class Images extends React.Component<any, any> {
 
+export default class Images extends React.Component<any, any> {
+    
     constructor(props: any) {
         super(props)
       
@@ -17,14 +18,14 @@ export default class Images extends React.Component<any, any> {
     }
 
     render() {
-        return <div>
-            <img height={this.props.height} width={this.props.width} src={pic1}></img>       
-  
-
-        </div>
+        const arrayOfImages = [pic1, pic2, pic3, pic4, pic5, logoJpg, logoPng];
+        return arrayOfImages.map(image => <div>
+            <img height={this.props.height} width={this.props.width} style={this.props.style} src={image}></img> 
+            </div>
+    ) 
+        
     }
 }
-
 
 
 

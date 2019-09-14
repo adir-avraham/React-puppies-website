@@ -11,14 +11,14 @@ import Footer from './components/footer/index';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header style={{color: "#61DAFB", border: "2px solid grey", padding: "40px"}} title="Welcome to my best puppies website ever!"/>
+      <Header style={{ color: "#61DAFB", border: "2px solid grey", padding: "40px" }} title="Welcome to my best puppies website ever!" />
       <header className="App-header">
-      <Images height="300" width="300"/>
-       
+        <Images height="175" width="200" style={{ opacity: "0.5" }} />
+
 
 
       </header>
-          <Footer style={{color: "red"}} title="All Rights Reserved (c)"/>
+      <Footer style={{ color: "red" }} title="All Rights Reserved (c)" />
     </div>
   );
 }
