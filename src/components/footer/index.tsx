@@ -1,13 +1,22 @@
 import React from 'react';
 
 
-export default function Footer(props:any) {
-const {title} = props; 
-const currentStyle = {color: "red"}
-return <div>
-    <p style={currentStyle}>{title}</p>
-</div>
+export default class Footer extends React.Component<any, any> {
+
+    constructor(props: any) {
+        super(props)
+      
+        
+    }
+
+    render() {
+        return <div>
+               <p style={this.props.style}>{this.props.title}</p>
+        </div>
+        
+    }
+}
 
 
 
-} 
+

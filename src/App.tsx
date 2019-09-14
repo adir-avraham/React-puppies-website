@@ -2,28 +2,25 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/index';
-
+import Images from './components/images/index';
 import Footer from './components/footer/index';
+
+
+
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header title="Welcome to my best puppies website ever!"/>
+      <Header style={{color: "#61DAFB", border: "2px solid grey", padding: "40px"}} title="Welcome to my best puppies website ever!"/>
       <header className="App-header">
+      <Images/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Learn React
-        </a>
+
       </header>
-          <Footer title="All Rights Reserved (c)"/>
+          <Footer style={{color: "red"}} title="All Rights Reserved (c)"/>
     </div>
   );
 }
